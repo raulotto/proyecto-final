@@ -1,15 +1,25 @@
+import React from 'react'; // Importa React para poder usar JSX y otras funcionalidades de React.
+import { FaArrowRight } from 'react-icons/fa'; // Importa el ícono de flecha derecha desde la biblioteca react-icons.
 
-import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-
-
+// Definición del componente ProductCard que recibe una prop: product.
 const ProductCard = ({ product }) => (
   <div className="product-card">
+    {/* Muestra la imagen del producto */}
     <img src={product.image} alt={product.title} />
-    <div className='info-top'><h2>{product.title}</h2></div>
-    <div className='info-bottom'><span>${product.price}</span>
-    <a href="#"><FaArrowRight /></a></div>
+    
+    {/* Muestra el título del producto en la parte superior */}
+    <div className='info-top'>
+      <h2>{product.title}</h2>
+    </div>
+    
+    {/* Muestra el precio del producto y un enlace con un ícono de flecha en la parte inferior */}
+    <div className='info-bottom'>
+      <span>${product.price}</span>
+      <a href="#">
+        <FaArrowRight /> {/* Ícono de flecha derecha */}
+      </a>
+    </div>
   </div>
 );
 
-export default ProductCard;
+export default ProductCard; // Exporta el componente para su uso en otros archivos.

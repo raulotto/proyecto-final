@@ -18,10 +18,7 @@ header {
   color: white;
   padding: 1rem;
 }
-header img {
-  width: 70%;
-  margin: 0 auto;
-}
+
 footer {
   background: #0c2941;
   color: #fff;
@@ -127,6 +124,10 @@ footer {
  
   margin: 0px;
 
+}
+header img {
+  width: 70%;
+  margin: 0 auto;
 }
 .product-card img {
   height: 80px;
