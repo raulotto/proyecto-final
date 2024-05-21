@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: white;
+  padding: 1rem;
+}
+header img {
+  width: 70%;
+  margin: 0 auto;
+}
+footer {
+  background: #0c2941;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.product-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.product-card img {
+  height: 140px;
+  margin-bottom: 20px;
+}
+.product-list {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.list-pro {
+  background: #ededed;
+}
+.list-cat {
+  background: #e0e0e0;
+}
+.category-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+.category-filter button {
+  text-align: left;
+}
+.category-filter button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.category-filter button.active {
+  background-color: #aad500;
+  color: white;
+}
+.info-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.info-bottom span {
+  background: #aad500;
+  padding-inline: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.info-bottom svg {
+  fill: #aad500;
+}
+.info-top {
+  text-align: left;
+  font-size: 0.9em;
+  color: #3d3d3d;
+  width: 100%;
+}
+.loading-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ffffff9e;
+}
+
+@media screen and (max-width: 767px) {
+  .list-cat {
+    height: auto;
+}
+.product-list {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.product-card {
+ 
+  margin: 0px;
+
+}
+.product-card img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+.category-filter button {
+  padding: 0.3rem 0.7rem;
+  text-align: center;
+}
+}
